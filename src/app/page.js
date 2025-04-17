@@ -6,6 +6,11 @@ import styles from '@/styles/movie.module.css';
 import '@/app/globals.css';
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
+process.env.NEXT_PUBLIC_RAPID_URL = undefined;
+process.env.RAPID_API_KEY = undefined;
+process.env = undefined;
+
+
 const Page = async () => {
     const url = process.env.NEXT_PUBLIC_RAPID_URL;
     const apiKey = process.env.RAPID_API_KEY;
