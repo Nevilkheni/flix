@@ -1,24 +1,15 @@
-// src/app/page.js
-
 import React from 'react';
 import Herosection from '@/Header/herosection';
 import styles from '@/styles/movie.module.css';
 import '@/app/globals.css';
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
-process.env.NEXT_PUBLIC_RAPID_URL = undefined;
-process.env.RAPID_API_KEY = undefined;
-process.env = undefined;
-
-
 const Page = async () => {
-    const url = process.env.NEXT_PUBLIC_RAPID_URL;
-    const apiKey = process.env.RAPID_API_KEY;
+    // const url = process.env.NEXT_PUBLIC_RAPID_URL;
+    // const apiKey = process.env.RAPID_API_KEY;
 
-    // 🔒 Handle missing environment variables during build
     if (!url || !apiKey) {
         console.error("❌ Missing environment variables: NEXT_PUBLIC_RAPID_URL or RAPID_API_KEY");
-
         return (
             <div style={{ padding: '2rem', color: 'red' }}>
                 <h2>Environment variable error</h2>
@@ -30,14 +21,14 @@ const Page = async () => {
         );
     }
 
-    const options = {
-        method: 'GET',
-        headers: {
-            'x-rapidapi-key': apiKey,
-            'x-rapidapi-host': 'netflix54.p.rapidapi.com',
-        },
-        next: { revalidate: 60 }, // ISR
-    };
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'x-rapidapi-key': apiKey,
+    //         'x-rapidapi-host': 'netflix54.p.rapidapi.com',
+    //     },
+    //     next: { revalidate: 60 }, // ISR
+    // };
 
     let main_data = [];
 
