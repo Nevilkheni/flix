@@ -1,0 +1,150 @@
+.main_section {
+    padding: 7rem 10rem;
+    background: linear-gradient(to right, #ead2f5, #a2c8eb);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid_two_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero_content {
+    flex: 1;
+}
+
+.hero_content h1 {
+    font-size: 2.3rem;
+    color: #111;
+}
+
+.hero_content p {
+    font-size: .7rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.hero_content button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* 
+.hero_image {
+    flex: 1;
+    background: url('/tree.png') no-repeat center center / contain;  
+    height: 300px;
+}
+
+ */
+
+
+
+
+
+
+
+
+.main_section {
+    padding: 7rem 10rem;
+    background: linear-gradient(to right, #ead2f5, #a2c8eb);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid_two_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero_content {
+    flex: 1;
+}
+
+.hero_content h1 {
+    font-size: 2.3rem;
+    color: #111;
+}
+
+.hero_content p {
+    font-size: .7rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.hero_content button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hero_image {
+    flex: 1;
+    /*background: url('/tree.png') no-repeat center center / contain;*/
+    background: url("./../../public/tree.png") no-repeat center center / contain;
+    height: 300px;
+    min-width: 250px;
+}
+
+/* Responsive */
+@media (max-width: 999px) {
+    .main_section {
+        padding: 4rem 2rem;
+    }
+
+    .grid_two_section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero_content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero_content p {
+        font-size: 0.9rem;
+    }
+
+    .hero_content button {
+        font-size: 0.9rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .hero_image {
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 2rem;
+    }
+
+    .main_section {
+        background: linear-gradient(to right, #ead2f5, #a2c8eb);
+        height: 500px;
+    }
+}

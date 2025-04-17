@@ -1,0 +1,95 @@
+.header{
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ead2f5, #a2c8eb);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+.menuButton {
+    display: none;
+    
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navList{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+@media (max-width: 999px) {
+    .menuButton {
+        display: block;
+        color: #000;
+        
+    }
+
+
+    .navList {
+        display: none;
+    }
+
+    .logo{
+        display: none;
+
+
+    }
+
+
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100px;
+        background: linear-gradient(to left, #ffffff, #b5b5b5);
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1rem;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        transition: transform 1s ease-in-out;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar li a {
+        text-decoration: none;
+
+        color: #000;
+        font-size: 1.2rem;
+    }
+
+    .sidebar li a:hover {
+        color: #ff6347;
+    }
+
+    .closeButton {
+        align-self: flex-end;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 1rem;
+    }
+
+    .header{
+        padding: 20px 20px;
+    }
+}

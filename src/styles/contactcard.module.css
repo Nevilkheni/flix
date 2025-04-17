@@ -1,0 +1,67 @@
+.section {
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+}
+
+
+.form{
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.grid_card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid_card i{
+    font-size: 40px;
+    color: #ff0000;
+}
+
+.grid_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.grid_card h2 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.grid_card p {
+    margin: 0.25rem 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.last_para {
+    font-style: italic;
+    color: #888;
+}
+
+.grid_card span {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0070f3;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.grid_card span:hover {
+    color: #0059c1;
+}

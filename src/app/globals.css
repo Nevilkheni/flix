@@ -1,0 +1,61 @@
+/* app/globals.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+/* globals.css */
+.spinner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    margin: 200px 600px;
+
+}
+.spinner:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    /*border: 6px solid #3498db;*/
+    border-color: #ffffff transparent #3498db transparent;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* ✅ Responsive adjustments for screens 999px and below */
+@media (max-width: 999px) {
+    .spinner {
+        width: 60px;
+        height: 60px;
+        margin: 150px 150px;
+    }
+
+    .spinner:after {
+        width: 48px;
+        height: 48px;
+        margin: 6px;
+        border-width: 5px;
+    }
+}
